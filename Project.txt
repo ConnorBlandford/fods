@@ -1,5 +1,5 @@
 Team Members:
-- Connor Blandford
-- Ian Roberts
-- Abdirahman Darman
-- Jiahua Cui
+- Connor Blandford     | South America
+- Ian Roberts          | North America
+- Abdirahman Darman    | Asia
+- Jiahua Cui           | Europe
