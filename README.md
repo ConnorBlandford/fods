@@ -3,13 +3,17 @@ Repository for Foundations of Data Science Course work and Code
 
 Every create a notebook with your continent code prep in 1 cell.
 
-
-
 Darman:
-- Upload a notebook with correlation stuff
+- Upload a notebook with correlation stuff for Asia
 
 Ji:
-- 
+- Upload a notebook with the forecast work for Europe
+
+Ian:
+- Upload a notebook with the forecast work for North America
+
+Everyone
+- Upload a 'formating' notebook with all of your continent / country selection code
 
 Connor:
 import os
@@ -52,3 +56,24 @@ rn_cap['Continents'] = np.nan
 
 rn_con.info()
 rn_cap.info()
+
+...
+
+fig_array = []
+fig_title = 'South American Energy Generation & Consumption'
+
+fig, ax = plt.subplots(nrows=1, ncols=1)
+group.plot(kind='line',x='Year', title=f"{title} - Consumption", ax=ax)
+ax.set_ylabel('Energy Consumed [TWh]')
+ax.set_xlabel('Year')
+fig_array.append(fig)
+
+with PdfPages(f'Output/{fig_title}.pdf') as pdf:
+    for fig in fig_array:
+        pdf.savefig(fig)  # saves the current figure into a pdf page
+
+    # We can also set the file's metadata via the PdfPages object:
+    d = pdf.infodict()
+    d['Title'] = f'Renewable Energy Generation & Consumption'
+    d['Author'] = 'C. Blandford, I. Roberts, A. Darman, J. Cui'
+    d['CreationDate'] = dt.datetime.today()
