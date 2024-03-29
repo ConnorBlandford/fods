@@ -1,7 +1,7 @@
 Project folder for 2024-W UofT SCS course 3251 Statistics for Data Science
 
 Project Team Members:
-- Connor Blandford
+Connor Blandford, Katrina Chu, Arsen Chuzhykov, Hennadii Korolevych & Natasha Shaikhlislamova
 
 Data Sources:
 - https://open.toronto.ca/dataset/ttc-streetcar-delay-data/
